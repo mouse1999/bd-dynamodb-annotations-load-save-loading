@@ -23,7 +23,7 @@ public class BookDao {
      * @return book returns the book loaded from the database
      */
     public Book getBook(String key) {
-        //TODO: Implement
-        return null;
+
+        return  mapper.load(Book.class, key);
     }
 }
